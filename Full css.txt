@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #000000;
+  color: #fff;
   position: relative;
   background: transparent;
 }
@@ -18,7 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: rgba(1, 14, 27, 0.3);;
+  background: #010e1b;
   background-size: cover;
   left: 0;
   right: 0;
@@ -46,14 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Header with Background Image
+# Header
 --------------------------------------------------------------*/
 #header {
-  background-image: url('../img/background/Back3.png'); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the section */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repeating */
-  background-attachment: fixed; /* Optional: Makes the image stay fixed while scrolling */
   transition: ease-in-out 0s;
   position: relative;
   height: 100vh;
@@ -77,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 a, #header h1 a:hover {
-  color: rgb(255, 255, 255);
+  color: #dee2e6;
   line-height: 1;
   display: inline-block;
 }
@@ -110,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  color:  rgb(255, 255, 255);
+  color: #fff;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -162,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: rgb(0, 0, 0);
+  color: #fff;
   font-size: 19px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -281,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgb(206, 203, 203);
+  background: #09203a;
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -345,8 +340,39 @@ section .container {
   }
 }
 
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #dee2e6;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #dee2e6;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
-# About Section
+# About
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
@@ -372,8 +398,6 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
-
-/* Other specific sections */
 
 /*--------------------------------------------------------------
 # Counts
@@ -406,7 +430,7 @@ section .container {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #010101;
+  color: #fff;
 }
 
 .counts .count-box p {
@@ -432,7 +456,7 @@ section .container {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #a8a3a3;
+  color: #fff;
 }
 
 .skills .progress .skill .val {
@@ -458,7 +482,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: rgb(2, 2, 2);
+  background: #09203a;
   transition: ease-in-out 0.3s;
 }
 
@@ -479,7 +503,7 @@ section .container {
 }
 
 .interests .icon-box:hover {
-  background: gray;
+  background: #042b56eb;
 }
 
 /*--------------------------------------------------------------
@@ -496,7 +520,7 @@ section .container {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid rgba(0, 0, 0, 0.12);
+  border: 6px solid rgba(255, 255, 255, 0.12);
 }
 
 .testimonials .testimonial-item h3 {
@@ -552,7 +576,7 @@ section .container {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .testimonials .owl-dot.active {
@@ -631,7 +655,7 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: gray;
+  background: #09203a;
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
   margin: 10px
@@ -686,7 +710,7 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: gray;
+  background: #042e5f;
   border-color: #1c7d32;
 }
 
@@ -730,8 +754,8 @@ section .container {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #010101;
-  background: #ffffff1a;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
@@ -870,21 +894,21 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: rgb(19, 19, 20);
+  background: #09203a;
 }
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #807676;
+  color: #dee2e6;
   border-radius: 50%;
   padding: 14px;
   float: left;
-  background: rgba(255, 234, 234, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #f7f4f4;
+  color: #28a745;
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
@@ -1052,7 +1076,7 @@ section .container {
   right: 15px;
   bottom: 15px;
   font-size: 13px;
-  color: #000000;
+  color: #fff;
   z-index: 1;
 }
 
